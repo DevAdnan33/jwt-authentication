@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.jwtauthentication.jwt_authenctication.Services.UserService;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jwtauthentication.jwt_authenctication.model.User;
 
 @RestController
+@RequestMapping("/home")
 public class Controllers {
 
     @Autowired
